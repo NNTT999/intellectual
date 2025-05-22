@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<title>ボタンクリック</title>
+</head>
+<body>
+<button id="button">押してください</button>
+<div id="message-area"></div>
+
+<script>
+const button = document.getElementById('button');
+const messageArea = document.getElementById('message-area');
+button.addEventListener('click', function() {
+  // When button is clicked, display message below
+  messageArea.textContent = 'ボタンが押されました。';
+});
+</script>
+</body>
+</html>
